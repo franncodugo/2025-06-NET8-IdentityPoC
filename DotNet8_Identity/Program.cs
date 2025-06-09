@@ -1,8 +1,6 @@
-
 /* 
  * Note: This solution was made in dotNET version 9 but it will 
  * only include features from the LTS version. 8.-
- * 
  */
 
 using DotNet8_Identity.Database;
@@ -12,12 +10,15 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddOpenApi();
+// Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
+// Authentication & Authorization
 builder.Services.AddAuthorization();
-// methid will be Cookie at the moment.
-builder.Services.AddAuthentication().AddCookie(IdentityConstants.ApplicationScheme); 
+builder.Services.AddAuthentication().AddCookie(IdentityConstants.ApplicationScheme);
 
+// Identity
 builder.Services.AddIdentityCore<User>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddApiEndpoints();
@@ -30,13 +31,18 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
-
-    // from the helper.
+    // Migrate database
     app.ApplyMigrations();
+
+    // Swagger
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapIdentityApi<User>();
 

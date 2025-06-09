@@ -340,3 +340,7 @@ C:\Users\Franco\Desktop\Franco\dev\repo\2025-06-NET8-IdentityPoC\DotNet8_Identit
 C:\Users\Franco\Desktop\Franco\dev\repo\2025-06-NET8-IdentityPoC\DotNet8_Identity\obj\Debug\net9.0\DotNet8_Identity.pdb
 C:\Users\Franco\Desktop\Franco\dev\repo\2025-06-NET8-IdentityPoC\DotNet8_Identity\obj\Debug\net9.0\DotNet8_Identity.genruntimeconfig.cache
 C:\Users\Franco\Desktop\Franco\dev\repo\2025-06-NET8-IdentityPoC\DotNet8_Identity\obj\Debug\net9.0\ref\DotNet8_Identity.dll
+C:\Users\Franco\Desktop\Franco\dev\repo\2025-06-NET8-IdentityPoC\DotNet8_Identity\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Franco\Desktop\Franco\dev\repo\2025-06-NET8-IdentityPoC\DotNet8_Identity\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Franco\Desktop\Franco\dev\repo\2025-06-NET8-IdentityPoC\DotNet8_Identity\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Franco\Desktop\Franco\dev\repo\2025-06-NET8-IdentityPoC\DotNet8_Identity\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

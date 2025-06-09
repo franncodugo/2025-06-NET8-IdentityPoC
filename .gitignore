@@ -5,6 +5,9 @@
 
 # dotenv files
 .env
+obj
+/obj
+../obj
 
 # User-specific files
 *.rsuser
